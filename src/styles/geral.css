@@ -1,0 +1,38 @@
+/* O arquivo CSS seguirá as ordens dos elementos HTML */
+/* Atribuições Gerais */
+* {
+	font-family: var(--fonte-principal);
+	background-color: var(--cor-mais-escura);
+}
+body,html{
+    font-family: var(--fonte-principal);
+    color: var(--cor-branca);
+}
+header{
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+nav{display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: flex-start;
+
+
+    flex-direction: row;}
+#container-redes-sociais{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: flex-start;
+
+
+    flex-direction: row;
+}
+#logo{height: 100px;}
+
+.botoes-rede-sociais {
+	height: 24px;
+}
