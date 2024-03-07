@@ -4,35 +4,117 @@
 	font-family: var(--fonte-principal);
 	background-color: var(--cor-mais-escura);
 }
-body,html{
-    font-family: var(--fonte-principal);
-    color: var(--cor-branca);
+body,
+html {
+	font-family: var(--fonte-principal);
+	color: var(--cor-branca);
 }
-header{
-    height: 100vh;
+/* Início */
+/* Barra de Navegação, o menu é responsivo e se transforma em ícone quando for um dispositivo móvel*/
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
 }
-a{
-    text-decoration: none;
+
+.logo img {
+	width: 150px;
 }
-nav{display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    align-content: flex-start;
 
-
-    flex-direction: row;}
-#container-redes-sociais{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: center;
-    align-content: flex-start;
-
-
-    flex-direction: row;
+.menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
-#logo{height: 100px;}
 
+.menu ul li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.menu ul li:first-child {
+	margin-left: 0;
+}
+
+.menu ul li a {
+	color: var(--cor-branca);
+	text-decoration: none;
+}
+
+/* Fim da Barra de Navegação */
+.flex-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	flex-direction: row;
+}
+.elemento {
+	padding: 10px;
+	margin: 10px;
+	background-color: transparent;
+}
+.flex-container .elemento {
+	width: 30%; /* Define a largura de cada seção */
+	text-align: center; /* Alinha o conteúdo ao centro */
+}
+#nome {
+	text-align: end;
+	color: var(--cor-branca);
+	font-size: 2.5rem;
+	font-weight: 700;
+	font-style: italic;
+}
+#container-redes-sociais {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: center;
+	flex-direction: row;
+}
 .botoes-rede-sociais {
-	height: 24px;
+	width: 44px;
+	margin: 10px;
+}
+#link-whats > a {
+	color: white;
+}
+#link-whats > a > img {
+	width: 20px;
+}
+#link-whats {
+	text-align: end;
+}
+#foto-perfil {
+	width: 300px;
+}
+#destaque {
+	color: var(--cor-destaque);
+	font-weight: 700;
+	text-align: start;
+	font-size: 2.5rem;
+}
+#link {
+	font-size: 14;
+	color: var(--cor-branca);
+	display: flex;
+	font-weight: 900;
+}
+p {
+	font-size: 10px;
+	color: var(--cor-clara);
+	text-align: justify;
+	font-weight: 300;
+}
+
+/* Fim do cabeçalho e inicio do link Serviços */
+#servicos {
+	background-color: red;
+}
+.titulo {
+	font-weight: 700;
+	font-size: 2rem;
+	text-align: center;
 }

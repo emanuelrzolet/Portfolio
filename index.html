@@ -13,40 +13,88 @@
 	<body>
 		<!-- O conteúdo será todo disposto em uma pagina só com links internos -->
 		<!-- Barra de Navegação -->
-		<header id="inicio">
-			<nav>
+		<header class="navbar">
+			<div class="logo">
 				<a href="#inicio">
-					<img id="logo" src="src/assets/images/Logo sem background e circulo.png" alt="Logo">
+					<img
+						id="logo"
+						src="src/assets/images/logo-removebg-preview.png"
+						alt="Logo"
+					/>
 				</a>
-				<!--  -->
-				<span class="container-navBar">
-                    <a href="#">Início</a>
-					<a href="#">Serviços</a>
-					<a href="#">Habilidades</a>
-					<a href="#">Portfólio</a>
-					<a href="#">Sobre Mim</a>
-					<a href="#">Contato</a>
-				</span>
+			</div>
+			<nav class="menu">
+				<ul>
+					<li><a href="#">Início</a></li>
+					<li><a href="#">Serviços</a></li>
+					<li><a href="#">Habilidades</a></li>
+					<li><a href="#">Portfólio</a></li>
+					<li><a href="#">Sobre Mim</a></li>
+					<li><a href="#">Contato</a></li>
+				</ul>
 			</nav>
-			<!-- Cabeçalho de apresentação -->
-			<section>
-                <h1>Emanuel Zolet.</h1>
-                <div id="container-redes-sociais">
-                    <a href="https://www.instagram.com/emzolet" target="_blank" rel="noopener noreferrer">
-                        <img class="botoes-rede-sociais"
-                            src="src/assets/icons/Redes Sociais/instagram.png"
-                            alt="Instagram"
-                        />
-                    </a>
-                    <a href="https://www.linkedin.com/in/emanuelzolet/" target="_blank" rel="noopener noreferrer"></a>
-                        <img class="botoes-rede-sociais" src="src/assets/icons/Redes Sociais/linkedin.png" alt="LinkedIn"
-                    /></a>
-                </div>
-                            <a href="https://wa.me/5554984190241">
-                                Entre em Contato
-                                <img class="botoes-rede-sociais" src="src/assets/icons/Redes Sociais/whatsapp - sem borda.png" alt="WhatsApp">
-                            </a>
-            </section>
 		</header>
+		<!-- Cabeçalho de apresentação -->
+		<div class="flex-container">
+			<section class="elemento">
+				<h1 id="nome">Emanuel Zolet.</h1>
+				<div id="container-redes-sociais">
+					<a
+						href="https://www.instagram.com/emzolet"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img
+							class="botoes-rede-sociais"
+							src="src/assets/icons/Redes Sociais/instagram.png"
+							alt="Instagram"
+						/>
+					</a>
+					<a
+						href="https://www.linkedin.com/in/emanuelzolet/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img
+							class="botoes-rede-sociais"
+							src="src/assets/icons/Redes Sociais/linkedin.png"
+							alt="LinkedIn"
+						/>
+					</a>
+				</div>
+				<div id="link-whats">
+					<a href="https://wa.me/5554984190241">
+						Entre em Contato
+						<img
+							src="src/assets/icons/Redes Sociais/whatsapp - sem borda.png"
+							alt="WhatsApp"
+						/>
+					</a>
+				</div>
+			</section>
+			<section class="elemento">
+				<img
+					id="foto-perfil"
+					src="src/assets/images/Foto_Perfil-removebg-preview.png"
+					alt="Foto de Perfil"
+				/>
+			</section>
+			<section class="elemento">
+				<h1 id="destaque">DESENVOLVEDOR WEB</h1>
+				<br />
+				<p>
+					Em cada linha, em cada traço, reside a essência da minha paixão.
+					<br />Bem-vindo ao meu universo de inspiração e inovação!
+				</p>
+				<br />
+				<a id="link" href="#">Me Conheça</a>
+			</section>
+		</div>
+		<!-- Inicio do conteúdo Principal -->
+		<main>
+			<article id="servicos">
+				<h2 class="titulo">Serviços</h2>
+			</article>
+		</main>
 	</body>
 </html>
