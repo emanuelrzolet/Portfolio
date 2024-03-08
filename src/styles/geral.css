@@ -2,12 +2,14 @@
 /* Atribuições Gerais */
 * {
 	font-family: var(--fonte-principal);
-	background-color: var(--cor-mais-escura);
 }
 body,
 html {
+	background-color: var(--cor-mais-escura);
 	font-family: var(--fonte-principal);
 	color: var(--cor-branca);
+	padding: 10px;
+	margin: 5px;
 }
 /* Início */
 /* Barra de Navegação, o menu é responsivo e se transforma em ícone quando for um dispositivo móvel*/
@@ -110,11 +112,21 @@ p {
 }
 
 /* Fim do cabeçalho e inicio do link Serviços */
-#servicos {
-	background-color: red;
+article#servicos {
+	background-color: var(--cor-escura);
 }
 .titulo {
 	font-weight: 700;
 	font-size: 2rem;
 	text-align: center;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 25px;
+	grid-row-gap: 20px;
+}
+.grid-itens {
+	background-color: var(--cor-mais-escura);
 }
