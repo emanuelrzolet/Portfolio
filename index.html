@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="src/styles/reset.css" />
 		<link rel="stylesheet" href="src/styles/geral.css" />
 		<!-- JavaScript -->
+        <script src="src/scripts/alerta.js"></script>
 	</head>
 	<body>
 		<!-- O conteúdo será todo disposto em uma pagina só com links internos -->
@@ -174,44 +175,82 @@
 			</article>
 			<article id="portfolio">
 				<h2 class="titulo">Portfólio</h2>
-				<section class="flex-item">
+				<br />
+
+				<section class="inline-item">
 					<img
 						src="src/assets/images/spotify-clone.png"
 						alt="Clone da Página do Spotify"
 					/>
-					<aside>
-						<h2>spotify-clone</h2>
+					<span>
+						<h2>Spotify-clone</h2>
+                        <br>
 						<p>Criado durante a Imersão Front-End da Alura.</p>
-					</aside>
+					</span>
 				</section>
-				<section class="flex-item">
-					<aside>
+				<br />
+				<section class="inline-item">
+					<span>
 						<h2>Site Zolet Advocacia</h2>
+                        <br>
 						<p>Landing Page criada utilizando o framework Django.</p>
 						<br />
 						<a href="http://zoletadvocacia.com/">Acesse</a>
-					</aside>
+					</span>
 					<img
 						src="src/assets/images/site-zoletAdvocacia.png"
 						alt="Site Zolet Advocacia"
 					/>
 				</section>
-				<section class="flex-item">
+				<br />
+				<section class="inline-item">
 					<img
 						src="src/assets/images/prototipaçãoPets.png"
 						alt="Protótipo do site Pets"
 					/>
-					<aside>
+					<span>
 						<h2>Prototipação do site Petz</h2>
+                        <br>
 						<p>Trabalho acadêmico</p>
 						<br />
 						<a
 							href="https://www.figma.com/proto/tdYVrOjzRQvPIm6aTcWfXs/Petz?type=design&node-id=1-98&t=W5EGqvFiAlD4PtHW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"
 							>Acesse</a
 						>
-					</aside>
+					</span>
 				</section>
+                <section id="link-github">
+                    <a href="https://github.com/emanuelrzolet">Veja mais projetos no meu Github</a>
+                </section>
 			</article>
+            <article id="sobre-mim">
+                <section>
+                    <p>TROCAR PELO CONTEÚDO</p>
+                </section>
+            </article>
+            <article id="contato">
+                <br>
+                <section id="form">
+                    <h2 class="titulo">Contato</h2>
+                    <br>
+                    <form action="#" method="post">
+                        <label for="e-mail">Nome:</label>
+                        <br>
+                        <input type="text" name="name" id="name" placeholder="Digite seu nome">
+                        <br><br>
+                        <label for="e-mail">E-mail:</label>
+                        <br>
+                        <input type="text" name="e-mail" id="e-mail" placeholder="Digite seu e-mail">
+                        <br><br>
+                        <label for="mensagem">Mensagem:</label>
+                        <br>
+                        <input type="text" name="mensagem" id="mensagem" placeholder="Digite sua mensagem" maxlength="800">
+                        <br><br>
+                        <button onclick="mostrarAlerta()">Enviar</button>
+                        
+                    </form>
+                </section>
+            </article>
 		</main>
 	</body>
 </html>
