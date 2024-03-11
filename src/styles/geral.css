@@ -153,23 +153,35 @@ article#servicos {
 	margin-left: 10px;
 }
 /* Fim de Serviços e Inicio de Habilidades */
+article#habilidades{
+	padding: 25px;
+}
+article#habilidades > p{
+	text-align: center;
+}
+/* Grid das Habilidades */
 #habilidades-container {
 	position: static;
-	display: flex;
 }
 #habilidades-container > ul {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 1fr);
-	grid-column-gap: 31px;
-	grid-row-gap: 16px;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+}
+#habilidades-container > ul > li {
+	text-align: center;
+}
+#habilidades-container > ul > li:hover {
+	overflow: hidden;
+	scale: 1.1;
 }
 .progresso-container {
 	position: static;
 	top: 50%;
 	left: 50%;
 	border-radius: 50%;
-	box-shadow: 25px 20px 40px rgba(60, 60, 150, 0.25);
 	display: grid;
 	place-items: center;
 }
@@ -180,6 +192,7 @@ article#servicos {
 	border-radius: 50%;
 	display: grid;
 	place-items: center;
+	box-shadow: 25px 20px 40px rgba(60, 60, 150, 0.25);
 }
 .circular-progress:before {
 	content: "";
@@ -200,12 +213,13 @@ article#servicos {
 }
 /* Titulo da Habilidade */
 .titulo-habilidades {
+	margin: 10px;
 	text-align: center;
 }
 /* Imagem dos icones das tecnologias */
 .icones-tecnologias {
-	height: 15vh;
-	width: 15vh;
+	height: 7vh;
+	width: 7vh;
 }
 
 /* Fim de Habilidades e Inicio do banner  */
