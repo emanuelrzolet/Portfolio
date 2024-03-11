@@ -10,7 +10,9 @@ html {
 	color: var(--cor-branca);
 	scroll-behavior: smooth;
 }
-a{color: var(--cor-branca);}
+a {
+	color: var(--cor-branca);
+}
 /* Início */
 /* Barra de Navegação, o menu é responsivo e se transforma em ícone quando for um dispositivo móvel*/
 
@@ -151,10 +153,18 @@ article#servicos {
 	margin-left: 10px;
 }
 /* Fim de Serviços e Inicio de Habilidades */
-#habilidades-container{
+#habilidades-container {
 	position: static;
 	display: flex;
-}.progresso-container {
+}
+#habilidades-container > ul {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 31px;
+	grid-row-gap: 16px;
+}
+.progresso-container {
 	position: static;
 	top: 50%;
 	left: 50%;
@@ -162,40 +172,43 @@ article#servicos {
 	box-shadow: 25px 20px 40px rgba(60, 60, 150, 0.25);
 	display: grid;
 	place-items: center;
-  }
-  .circular-progress {
+}
+.circular-progress {
 	position: relative;
 	height: 125px;
 	width: 125px;
 	border-radius: 50%;
 	display: grid;
 	place-items: center;
-  }
-  .circular-progress:before {
+}
+.circular-progress:before {
 	content: "";
 	position: absolute;
 	height: 84%;
 	width: 84%;
 	background-color: #07171f;
 	border-radius: 50%;
-  }
-  .value-container {
+}
+.value-container {
 	position: relative;
 	font-size: 15px;
 	color: var(--cor-branca);
-  }
-  /* Esse valor tem uso no JavaScript */
-  .valor-oculto{
+}
+/* Esse valor tem uso no JavaScript */
+#valor-oculto {
 	display: none;
-  }
-  /* Imagem dos icones das tecnologias */
-  .icones-tecnologias{
-	
-  }
-  
-  
-/* Fim de Habilidades e Inicio do banner  */
+}
+/* Titulo da Habilidade */
+.titulo-habilidades {
+	text-align: center;
+}
+/* Imagem dos icones das tecnologias */
+.icones-tecnologias {
+	height: 15vh;
+	width: 15vh;
+}
 
+/* Fim de Habilidades e Inicio do banner  */
 
 /* Banner Animado */
 
