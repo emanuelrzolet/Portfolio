@@ -27,12 +27,12 @@
 			</div>
 			<nav class="menu">
 				<ul>
-					<li><a href="#">Início</a></li>
-					<li><a href="#">Serviços</a></li>
-					<li><a href="#">Habilidades</a></li>
-					<li><a href="#">Portfólio</a></li>
-					<li><a href="#">Sobre Mim</a></li>
-					<li><a href="#">Contato</a></li>
+					<li><a href="#inicio">Início</a></li>
+					<li><a href="#servicos">Serviços</a></li>
+					<li><a href="#habilidades">Habilidades</a></li>
+					<li><a href="#portfolio">Portfólio</a></li>
+					<li><a href="#sobre-mim">Sobre Mim</a></li>
+					<li><a href="#contato">Contato</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -164,8 +164,10 @@
 				</section>
 			</article>
 			<article id="habilidades">
+                <h2 class="titulo">Formação e Habilidades</h2>
 				<section id="habilidades-container">
-					<h2 class="titulo">Formação e Habilidades</h2>
+                    <!-- Grid das habilidades -->
+                
 				</section>
 			</article>
 			<article id="banner">
@@ -173,6 +175,7 @@
 					Não trave o desenvolvimento do seu negocio! Contrate meus serviços.
 				</div>
 			</article>
+            <img id="imagemrotativa" src="src/assets/images/EZ-laranja.png" alt="Imagem rotacionando">
 			<article id="portfolio">
 				<h2 class="titulo">Portfólio</h2>
 				<br />
@@ -209,12 +212,12 @@
 						alt="Protótipo do site Pets"
 					/>
 					<span>
-						<h2>Prototipação do site Petz</h2>
+						<h2>Prototipação do App Petz</h2>
                         <br>
 						<p>Trabalho acadêmico</p>
 						<br />
 						<a
-							href="https://www.figma.com/proto/tdYVrOjzRQvPIm6aTcWfXs/Petz?type=design&node-id=1-98&t=W5EGqvFiAlD4PtHW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"
+							target="_blank" href="https://www.figma.com/proto/tdYVrOjzRQvPIm6aTcWfXs/Petz?type=design&node-id=1-98&t=W5EGqvFiAlD4PtHW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"
 							>Acesse</a
 						>
 					</span>
@@ -247,10 +250,20 @@
                         <input type="text" name="mensagem" id="mensagem" placeholder="Digite sua mensagem" maxlength="800">
                         <br><br>
                         <button onclick="mostrarAlerta()">Enviar</button>
-                        
                     </form>
                 </section>
             </article>
 		</main>
+        <footer>
+            <article id="container-botoes">
+                <a target="_blank" href="https://www.instagram.com/emzolet"><img class="botoes-rede-sociais" src="src/assets/icons/Redes Sociais/instagram.png" alt="Instagram"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/emanuelzolet/"><img class="botoes-rede-sociais" src="src/assets/icons/Redes Sociais/linkedin.png" alt="Linkedin"></a>
+                <a target="_blank" href="https://github.com/emanuelrzolet"><img class="botoes-rede-sociais" src="src/assets/icons/Tecnologias/github.png" alt="GitHub"></a>
+            </article>
+            <article>
+                <p>©2024 <br>
+                    Desenvolvido por Emanuel Zolet</p>
+            </article>
+        </footer>
 	</body>
 </html>

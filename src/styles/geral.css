@@ -8,7 +8,9 @@ html {
 	background-color: var(--cor-mais-escura);
 	font-family: var(--fonte-principal);
 	color: var(--cor-branca);
+	scroll-behavior: smooth;
 }
+a{color: var(--cor-branca);}
 /* Início */
 /* Barra de Navegação, o menu é responsivo e se transforma em ícone quando for um dispositivo móvel*/
 
@@ -17,6 +19,9 @@ html {
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px 20px;
+	/* position: sticky; */
+	top: 0;
+	z-index: 100;
 }
 
 .logo img {
@@ -180,6 +185,23 @@ article#servicos {
 }
 
 /* Fim do Banner */
+/* Imagem rotacionando */
+img#imagemrotativa {
+	padding: 20px;
+	width: 100px;
+	display: block;
+	margin: 0 auto;
+	animation: girar infinite 4s linear;
+}
+
+@keyframes girar {
+	from {
+		transform: rotate(0deg); /* Ângulo inicial */
+	}
+	to {
+		transform: rotate(-360deg); /* Ângulo final */
+	}
+}
 /* Inicio da seção Últimos Trabalhos */
 article#portfolio {
 	padding: 10px 30px;
@@ -216,6 +238,7 @@ article#contato {
 	background-color: var(--cor-mais-escura);
 }
 section#form {
+	padding: 20px;
 	background-color: var(--cor-escura);
 	text-align: center;
 	/* Efeito de Glassmorphism */
@@ -225,12 +248,24 @@ section#form {
 	border-radius: 12px;
 	border: 1px solid rgba(255, 255, 255, 0.125);
 }
-section#form > form > input{
+section#form > form > input {
 	width: 60%;
 }
-section#form > form > button{
+section#form > form > button {
 	width: 60%;
 	color: var(--cor-branca);
 	background-color: var(--cor-mais-escura);
 	border-color: var(--cor-branca);
+}
+/* Inicio do Footer */
+footer > article > p {
+	padding: 10px;
+	font-size: 1rem;
+	background-color: var(--cor-preta);
+	text-align: center;
+}
+#container-botoes {
+	margin-top: 20px;
+	text-align: center;
+	background-color: var(--cor-preto-leve);
 }
