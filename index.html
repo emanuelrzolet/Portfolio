@@ -9,11 +9,10 @@
 		<link rel="stylesheet" href="src/styles/vars.css" />
 		<link rel="stylesheet" href="src/styles/reset.css" />
 		<link rel="stylesheet" href="src/styles/geral.css" />
-		<!-- JavaScript -->
-        <script src="src/scripts/alerta.js"></script>
 	</head>
 	<body>
 		<!-- O conteúdo será todo disposto em uma pagina só com links internos -->
+		<!-- O site será composto por um header contendo o menu de navegação e alguns links uteis, o resto do site será O conteúdo principal que será divido em articles. -->
 		<!-- Barra de Navegação -->
 		<header class="navbar">
 			<div class="logo">
@@ -164,18 +163,37 @@
 				</section>
 			</article>
 			<article id="habilidades">
-                <h2 class="titulo">Formação e Habilidades</h2>
+				<h2 class="titulo">Formação e Habilidades</h2>
+				<p>
+					Curso ADS na Uninter, ao longo do tempo adquiri conhecimento em várias
+					tecnologias.
+				</p>
+
+				<!-- Grid das habilidades -->
+				<br />
+				<!-- Aqui cada tecnologia terá um indicador de progresso, fiz uma leve gambiarra usando o javascript para nao ter que ficar repetindo elementos no CSS-->
 				<section id="habilidades-container">
-                    <!-- Grid das habilidades -->
-                
+					<div class="progresso-container">
+						<div class="circular-progress">
+							<div class="value-container">0%</div>
+							<div class="valor-oculto">80</div>
+						</div>
+					</div>
+					<img src="src/assets/icons/Tecnologias/html-5.png" alt="HTML logo" />
 				</section>
 			</article>
+			<br />
+			<!-- Banner animado -->
 			<article id="banner">
 				<div id="banner-texto">
 					Não trave o desenvolvimento do seu negocio! Contrate meus serviços.
 				</div>
 			</article>
-            <img id="imagemrotativa" src="src/assets/images/EZ-laranja.png" alt="Imagem rotacionando">
+			<img
+				id="imagemrotativa"
+				src="src/assets/images/EZ-laranja.png"
+				alt="Imagem rotacionando"
+			/>
 			<article id="portfolio">
 				<h2 class="titulo">Portfólio</h2>
 				<br />
@@ -187,7 +205,7 @@
 					/>
 					<span>
 						<h2>Spotify-clone</h2>
-                        <br>
+						<br />
 						<p>Criado durante a Imersão Front-End da Alura.</p>
 					</span>
 				</section>
@@ -195,7 +213,7 @@
 				<section class="inline-item">
 					<span>
 						<h2>Site Zolet Advocacia</h2>
-                        <br>
+						<br />
 						<p>Landing Page criada utilizando o framework Django.</p>
 						<br />
 						<a href="http://zoletadvocacia.com/">Acesse</a>
@@ -213,57 +231,96 @@
 					/>
 					<span>
 						<h2>Prototipação do App Petz</h2>
-                        <br>
+						<br />
 						<p>Trabalho acadêmico</p>
 						<br />
 						<a
-							target="_blank" href="https://www.figma.com/proto/tdYVrOjzRQvPIm6aTcWfXs/Petz?type=design&node-id=1-98&t=W5EGqvFiAlD4PtHW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"
+							target="_blank"
+							href="https://www.figma.com/proto/tdYVrOjzRQvPIm6aTcWfXs/Petz?type=design&node-id=1-98&t=W5EGqvFiAlD4PtHW-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"
 							>Acesse</a
 						>
 					</span>
 				</section>
-                <section id="link-github">
-                    <a href="https://github.com/emanuelrzolet">Veja mais projetos no meu Github</a>
-                </section>
+				<section id="link-github">
+					<a href="https://github.com/emanuelrzolet"
+						>Veja mais projetos no meu Github</a
+					>
+				</section>
 			</article>
-            <article id="sobre-mim">
-                <section>
-                    <p>TROCAR PELO CONTEÚDO</p>
-                </section>
-            </article>
-            <article id="contato">
-                <br>
-                <section id="form">
-                    <h2 class="titulo">Contato</h2>
-                    <br>
-                    <form action="#" method="post">
-                        <label for="e-mail">Nome:</label>
-                        <br>
-                        <input type="text" name="name" id="name" placeholder="Digite seu nome">
-                        <br><br>
-                        <label for="e-mail">E-mail:</label>
-                        <br>
-                        <input type="text" name="e-mail" id="e-mail" placeholder="Digite seu e-mail">
-                        <br><br>
-                        <label for="mensagem">Mensagem:</label>
-                        <br>
-                        <input type="text" name="mensagem" id="mensagem" placeholder="Digite sua mensagem" maxlength="800">
-                        <br><br>
-                        <button onclick="mostrarAlerta()">Enviar</button>
-                    </form>
-                </section>
-            </article>
+			<article id="sobre-mim">
+				<section>
+					<p>TROCAR PELO CONTEÚDO</p>
+				</section>
+			</article>
+			<article id="contato">
+				<br />
+				<section id="form">
+					<h2 class="titulo">Contato</h2>
+					<br />
+					<form action="#" method="post">
+						<label for="e-mail">Nome:</label>
+						<br />
+						<input
+							type="text"
+							name="name"
+							id="name"
+							placeholder="Digite seu nome"
+						/>
+						<br /><br />
+						<label for="e-mail">E-mail:</label>
+						<br />
+						<input
+							type="text"
+							name="e-mail"
+							id="e-mail"
+							placeholder="Digite seu e-mail"
+						/>
+						<br /><br />
+						<label for="mensagem">Mensagem:</label>
+						<br />
+						<input
+							type="text"
+							name="mensagem"
+							id="mensagem"
+							placeholder="Digite sua mensagem"
+							maxlength="800"
+						/>
+						<br /><br />
+						<button onclick="mostrarAlerta()">Enviar</button>
+					</form>
+				</section>
+			</article>
 		</main>
-        <footer>
-            <article id="container-botoes">
-                <a target="_blank" href="https://www.instagram.com/emzolet"><img class="botoes-rede-sociais" src="src/assets/icons/Redes Sociais/instagram.png" alt="Instagram"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/emanuelzolet/"><img class="botoes-rede-sociais" src="src/assets/icons/Redes Sociais/linkedin.png" alt="Linkedin"></a>
-                <a target="_blank" href="https://github.com/emanuelrzolet"><img class="botoes-rede-sociais" src="src/assets/icons/Tecnologias/github.png" alt="GitHub"></a>
-            </article>
-            <article>
-                <p>©2024 <br>
-                    Desenvolvido por Emanuel Zolet</p>
-            </article>
-        </footer>
+		<footer>
+			<article id="container-botoes">
+				<a target="_blank" href="https://www.instagram.com/emzolet"
+					><img
+						class="botoes-rede-sociais"
+						src="src/assets/icons/Redes Sociais/instagram.png"
+						alt="Instagram"
+				/></a>
+				<a target="_blank" href="https://www.linkedin.com/in/emanuelzolet/"
+					><img
+						class="botoes-rede-sociais"
+						src="src/assets/icons/Redes Sociais/linkedin.png"
+						alt="Linkedin"
+				/></a>
+				<a target="_blank" href="https://github.com/emanuelrzolet"
+					><img
+						class="botoes-rede-sociais"
+						src="src/assets/icons/Tecnologias/github.png"
+						alt="GitHub"
+				/></a>
+			</article>
+			<article>
+				<p>
+					©2024 <br />
+					Desenvolvido por Emanuel Zolet
+				</p>
+			</article>
+		</footer>
+		<!-- JavaScript -->
+		<script src="src/scripts/alerta.js"></script>
+		<script src="src/scripts/indicador-progresso.js"></script>
 	</body>
 </html>

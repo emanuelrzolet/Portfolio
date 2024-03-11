@@ -151,8 +151,52 @@ article#servicos {
 	margin-left: 10px;
 }
 /* Fim de Serviços e Inicio de Habilidades */
-
+#habilidades-container{
+	position: static;
+	display: flex;
+}.progresso-container {
+	position: static;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	box-shadow: 25px 20px 40px rgba(60, 60, 150, 0.25);
+	display: grid;
+	place-items: center;
+  }
+  .circular-progress {
+	position: relative;
+	height: 125px;
+	width: 125px;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+  }
+  .circular-progress:before {
+	content: "";
+	position: absolute;
+	height: 84%;
+	width: 84%;
+	background-color: #07171f;
+	border-radius: 50%;
+  }
+  .value-container {
+	position: relative;
+	font-size: 15px;
+	color: var(--cor-branca);
+  }
+  /* Esse valor tem uso no JavaScript */
+  .valor-oculto{
+	display: none;
+  }
+  /* Imagem dos icones das tecnologias */
+  .icones-tecnologias{
+	
+  }
+  
+  
 /* Fim de Habilidades e Inicio do banner  */
+
+
 /* Banner Animado */
 
 #banner {
