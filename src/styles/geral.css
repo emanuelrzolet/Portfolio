@@ -153,10 +153,10 @@ article#servicos {
 	margin-left: 10px;
 }
 /* Fim de Serviços e Inicio de Habilidades */
-article#habilidades{
+article#habilidades {
 	padding: 25px;
 }
-article#habilidades > p{
+article#habilidades > p {
 	text-align: center;
 }
 /* Grid das Habilidades */
@@ -302,6 +302,26 @@ section#link-github > a {
 article#sobre-mim {
 	background-color: var(--cor-escura);
 }
+article#sobre-mim > section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+article#sobre-mim > section > img {
+	height: 90vh;
+}
+article#sobre-mim > section > span {
+	width: 60vw;
+	text-align: justify;
+	border-radius: 50px;
+	background: linear-gradient(145deg, #0f1e29, #122330);
+	box-shadow: 23px 23px 45px #0e1c26, -23px -23px 45px #142634;
+	padding: 20px;
+	margin: 10px 40px;
+}
+article#sobre-mim > section > span > p {
+	font-size: 1rem;
+}
 /* Fim sobre mim e inicio de contatos */
 article#contato {
 	margin: auto;
@@ -318,6 +338,9 @@ section#form {
 	background-color: rgba(17, 25, 40, 0.31);
 	border-radius: 12px;
 	border: 1px solid rgba(255, 255, 255, 0.125);
+}
+section#form > form > textarea {
+	width: 60%;
 }
 section#form > form > input {
 	width: 60%;
