@@ -21,8 +21,14 @@ menuBotao.addEventListener("click", () => {
 	}
 });
 
-window.addEventListener("scroll", () => {
-	if (isMenuAberto) {
+function verificarPosicao() {
+	const posicaoAtual = window.scrollY;
+
+	if (posicaoAtual === 0) {
+		abrirMenu();
+	} else {
 		fecharMenu();
 	}
-});
+}
+
+window.addEventListener("scroll", verificarPosicao);
