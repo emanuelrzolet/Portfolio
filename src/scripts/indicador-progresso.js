@@ -1,25 +1,43 @@
+// A animação inicia quando o elemento é visualizado, o Valor final vem de um elemento que ta presente no HTML, mas escondi no CSS.
+
 const elementosLi = document.querySelectorAll("#habilidades-container li");
 
-elementosLi.forEach(elementoLi => {
-  const progressBar = elementoLi.querySelector(".circular-progress");
-  const valueContainer = elementoLi.querySelector(".value-container");
-  const valorOculto = elementoLi.querySelector("#valor-oculto");
-  const valor = valorOculto.textContent;
+const options = {
+  root: null, // usa o viewport como root
+  threshold: 0.5 // define o threshold para 50%
+};
 
-  let progressValue = 0;
-  let progressEndValue = valor;
-  let speed = 15;
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const elementoLi = entry.target;
+      const barraProgresso = elementoLi.querySelector(".circular-progress");
+      const valueContainer = elementoLi.querySelector(".value-container");
+      const valorOculto = elementoLi.querySelector("#valor-oculto");
+      const valor = valorOculto.textContent;
 
-  let progress = setInterval(() => {
-    progressValue++;
-    valueContainer.textContent = `${progressValue}%`;
-    progressBar.style.background = `conic-gradient(
-      #F85E00 ${progressValue * 3.6}deg,
-      #121212 ${progressValue * 3.6}deg
-    )`;
+      let valorProgresso = 0;
+      let progressEndValue = valor;
+      let speed = 15;
 
-    if (progressValue == progressEndValue) {
-      clearInterval(progress);
+      let progresso = setInterval(() => {
+        valorProgresso++;
+        valueContainer.textContent = `${valorProgresso}%`;
+        barraProgresso.style.background = `conic-gradient(
+          #F85E00 ${valorProgresso * 3.6}deg,
+          #121212 ${valorProgresso * 3.6}deg
+        )`;
+
+        if (valorProgresso == progressEndValue) {
+          clearInterval(progresso);
+        }
+      }, speed);
+
+      observer.unobserve(elementoLi); // para o observador após iniciar a animação
     }
-  }, speed);
+  });
+}, options);
+
+elementosLi.forEach(elementoLi => {
+  observer.observe(elementoLi);
 });
