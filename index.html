@@ -26,13 +26,10 @@
 			</div>
 			<nav class="menu">
 				<!-- Botão do menu hamburguer -->
-				<button class="menu-toggle" aria-label="Abrir Menu">
-					<span class="bar"></span>
-					<span class="bar"></span>
-					<span class="bar"></span>
+				<button class="menu-botão" aria-label="Abrir Menu">
+					<img src="src/assets/icons/menu Hamburguer.png" alt="Icone-Menu">
 				</button>
 				<ul>
-					<!-- Seus itens de menu aqui -->
 					<li><a href="#inicio">Início</a></li>
 					<li><a href="#servicos">Serviços</a></li>
 					<li><a href="#habilidades">Habilidades</a></li>
@@ -362,64 +359,71 @@
 						>Veja mais projetos no meu Github</a
 					>
 				</section>
-                <br>
+				<br />
 			</article>
 			<article id="sobre-mim">
-                <br>
+				<br />
+				<h2 class="titulo">Sobre Mim</h2>
 				<section>
-					<img
-						src="src/assets/images/Colagem-sem fundo.jpg"
-						alt="Uma colagem de fotos"
-					/>
-					<span>
-                        <h2 class="titulo">Sobre Mim</h2>
-                        <br>
-						<p>
-							Olá! Sou Emanuel Zolet, um entusiasta do mundo da tecnologia com
-							26 anos de idade. Desde cedo, meu fascínio pela computação e
-							sistemas digitais me levou a cursar Análise e Desenvolvimento de
-							Sistemas, uma jornada de aprendizado que tem sido emocionante e
-							enriquecedora.
-						</p>
-                        <br>
-						<p>
-							Estou orgulhosamente envolvido com a equipe da Brasil TecPar há
-							cinco anos. Ao longo dessa trajetória profissional, aprendi a
-							importância da colaboração, da resolução de problemas e do
-							comprometimento com a excelência em tudo o que faço. Embora seja
-							apaixonado pelo meu trabalho, também encontro equilíbrio na
-							natureza.
-						</p>
-                        <br>
-						<p>
-							Um dos meus hobbies favoritos é acampar. A sensação de liberdade e
-							conexão com o mundo natural é incomparável, e sempre que posso,
-							dedico um tempo para explorar novos destinos ao ar livre, longe da
-							agitação do dia a dia.
-						</p>
-                        <br>
-						<p>
-							Acredito que a combinação entre minha formação em análise de
-							sistemas, minha experiência na Brasil TecPar e minha paixão pelo
-							camping reflete não apenas meu compromisso com a excelência
-							profissional, mas também minha busca por uma vida equilibrada e
-							significativa, onde o trabalho e o lazer se complementam
-							harmoniosamente.
-						</p>
-                        <br>
-						<p>
-							Estou constantemente em busca de novos desafios e oportunidades de
-							aprendizado, sempre comprometido em aprimorar minhas habilidades e
-							contribuir de forma significativa para o avanço da tecnologia.
-						</p>
-                        <br>
-						<p>
-							Seja na linha de código ou sob o céu estrelado de uma noite de
-							acampamento, estou determinado a fazer cada momento contar.
-						</p>
-					</span>
-                    <br>
+					<div class="card-container">
+						<div class="card" id="card1">
+							<h2 class="titulo">Família</h2>
+							<br />
+							<p>
+								Minha família é meu porto seguro. Sou grato por ter ao meu lado
+								4 gatas, 1 cachorrinha e minha namorada, que são minhas
+								companheiras de aventuras e de momentos relaxantes em casa.
+							</p>
+							<p>
+								Somos uma família que adora estar junta, seja brincando, fazendo
+								carinho ou simplesmente curtindo a companhia uns dos outros.
+							</p>
+						</div>
+						<div class="card" id="card2">
+							<h2 class="titulo">Carreira</h2>
+							<br />
+							<p>
+								Sou um profissional apaixonado por tecnologia e desenvolvimento
+								de software. Atualmente, trabalho na Brasil TecPar há 5 anos,
+								onde tive a oportunidade de adquirir experiência em diversas
+								áreas da tecnologia da informação.
+							</p>
+							<p>
+								No entanto, meu grande sonho é trabalhar na área de
+								desenvolvimento de software, onde posso usar minha criatividade
+								e habilidades para criar soluções inovadoras e úteis para as
+								pessoas.
+							</p>
+							<p>
+								Para me aprimorar profissionalmente, estou cursando Analise e
+								Desenvolvimento de Sistemas na Uninter.
+							</p>
+							<p>
+								Acredito que a tecnologia tem o poder de transformar o mundo e
+								desejo contribuir para essa mudança.
+							</p>
+						</div>
+						<div class="card" id="card3">
+							<h2 class="titulo">Hobbies</h2>
+							<br />
+							<p>
+								Nas horas vagas, gosto de me conectar com a natureza. Adoro
+								acampar e explorar novos lugares, seja na praia, na serra ou na
+								floresta.
+							</p>
+							<p>
+								Cultivar plantas também é um hobby que me relaxa e me traz muita
+								alegria. Além disso, adoro por a mão na massa quando o
+								assunto é cozinhar.
+							</p>
+							<p>
+								Em resumo, sou um profissional dedicado, apaixonado pelo que faz
+								e em constante busca por aprendizado e crescimento.
+							</p>
+						</div>
+					</div>
 				</section>
+				<br />
 			</article>
 			<article id="contato">
 				<br />
@@ -447,7 +451,13 @@
 						<br /><br />
 						<label for="mensagem">Mensagem:</label>
 						<br />
-						<textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+						<textarea
+							name="mensagem"
+							id="mensagem"
+							cols="30"
+							rows="10"
+							placeholder="Digite sua mensagem"
+						></textarea>
 						<br /><br />
 						<button onclick="mostrarAlerta()">Enviar</button>
 					</form>
@@ -483,6 +493,7 @@
 			</article>
 		</footer>
 		<!-- JavaScript -->
+		<script src="src/scripts/animacao-card.js"></script>
 		<script src="src/scripts/menu.js"></script>
 		<script src="src/scripts/alerta.js"></script>
 		<script src="src/scripts/indicador-progresso.js"></script>

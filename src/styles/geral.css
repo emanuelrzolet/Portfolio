@@ -31,56 +31,58 @@ a {
 }
 /* Menu responsivo */
 header.scrolled {
-    background-color: var(--cor-mais-escura); /* Altere a cor de fundo conforme necessário */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adicione uma sombra para destacar o cabeçalho */
+	background-color: var(
+		--cor-mais-escura
+	); /* Altere a cor de fundo conforme necessário */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adicione uma sombra para destacar o cabeçalho */
 }
 .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--cor-mais-escura);
-    padding: 10px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--cor-mais-escura);
+	padding: 10px 20px;
 }
 
 .menu-toggle {
-    display: none; /* Inicialmente escondido */
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 101; /* Garante que o botão do menu apareça sobre o conteúdo */
+	display: none; /* Inicialmente escondido */
+	background: none;
+	border: none;
+	cursor: pointer;
+	z-index: 101; /* Garante que o botão do menu apareça sobre o conteúdo */
 }
 
 .menu ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+	list-style: none;
+	display: flex;
+	gap: 20px;
 }
 
 /* Esconde o menu quando o botão de menu hamburguer estiver visível */
 .menu ul {
-    display: flex;
+	display: flex;
 }
 
 @media (max-width: 768px) {
-    .menu ul {
-        display: none;
-        position: absolute;
-        top: 60px; /* Altura do seu cabeçalho, ajuste conforme necessário */
-        left: 0;
-        width: 100%;
-        flex-direction: column;
-        background-color: var(--cor-mais-escura);
-        padding: 10px;
-        z-index: 100; /* Garante que o menu apareça sobre o conteúdo */
-    }
+	.menu ul {
+		display: none;
+		position: absolute;
+		top: 60px; /* Altura do seu cabeçalho, ajuste conforme necessário */
+		left: 0;
+		width: 100%;
+		flex-direction: column;
+		background-color: var(--cor-mais-escura);
+		padding: 10px;
+		z-index: 100; /* Garante que o menu apareça sobre o conteúdo */
+	}
 
-    .menu ul.active {
-        display: flex;
-    }
+	.menu ul.active {
+		display: flex;
+	}
 
-    .menu-toggle {
-        display: block; /* Mostra o botão do menu hamburguer */
-    }
+	.menu-toggle {
+		display: block; /* Mostra o botão do menu hamburguer */
+	}
 }
 
 /*  */
@@ -354,6 +356,31 @@ section#link-github > a {
 	float: right;
 }
 /* Fim de trabalhos e inicio de sobre mim */
+/* Cards */
+.card-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 800px;
+	margin: 20px auto;
+}
+
+.card {
+	width: calc(33.33% - 10px);
+	border: 1px solid #ccc;
+	padding: 20px;
+	transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+	transform: scale(1.1);
+}
+
+.card.active {
+	background-color: #f85e00;
+	transform: scale(1.1);
+}
+/* Fim Cards */
 article#sobre-mim {
 	background-color: var(--cor-escura);
 }
