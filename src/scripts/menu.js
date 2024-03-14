@@ -34,3 +34,6 @@ function verificarPosicao() {
 }
 
 window.addEventListener("scroll", verificarPosicao);
+
+// Chama abrirMenu() para abrir o menu quando a página for carregada
+abrirMenu();

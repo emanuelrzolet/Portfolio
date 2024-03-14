@@ -15,7 +15,6 @@ a {
 }
 
 /* Início */
-
 /* Barra de Navegação, o menu é responsivo e se transforma em ícone quando for um dispositivo móvel*/
 
 .navbar {
@@ -42,7 +41,7 @@ a {
 }
 
 .menu.aberto {
-	margin-top: 2rem;
+	transform: translateY(2rem); /* Movendo o menu para baixo quando aberto */
 	width: fit-content;
 	display: flex;
 	justify-content: right;
@@ -51,7 +50,7 @@ a {
 	-webkit-backdrop-filter: blur(14px) saturate(142%);
 	background-color: rgba(6, 20, 27, 0.68);
 	border-radius: 12px;
-	border: 1px solid rgba(255, 255, 255, 0.125);
+	border: 1px rgba(255, 255, 255, 0.125);
 }
 
 .menu ul {
@@ -237,7 +236,7 @@ article#habilidades > p {
 	border-radius: 50%;
 	display: grid;
 	place-items: center;
-	box-shadow: 25px 20px 40px rgba(60, 60, 150, 0.25);
+	box-shadow: 25px 20px 40px #f85f0057;
 }
 .circular-progress:before {
 	content: "";
@@ -331,8 +330,10 @@ section.inline-item {
 }
 section.inline-item > img {
 	display: inline-block;
-	width: 60vw;
-	height: 50vh;
+	height: 30vh;
+	max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do seu contêiner */
+	height: auto; /* Mantém a proporção da imagem ao redimensionar */
+	object-fit: cover;
 }
 section.inline-item > span {
 	display: inline-block;
