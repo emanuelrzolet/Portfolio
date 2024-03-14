@@ -9,93 +9,97 @@
 		<link rel="stylesheet" href="src/styles/vars.css" />
 		<link rel="stylesheet" href="src/styles/reset.css" />
 		<link rel="stylesheet" href="src/styles/geral.css" />
-		<link rel="stylesheet" href="src/styles/menu.css" />
+		<!-- <link rel="stylesheet" href="src/styles/menu.css" /> -->
 	</head>
 	<body>
 		<!-- O conteúdo será todo disposto em uma pagina só com links internos -->
 		<!-- O site será composto por um header contendo o menu de navegação e alguns links uteis, o resto do site será O conteúdo principal que será divido em articles. -->
 		<!-- Barra de Navegação -->
-		<header id="inicio" class="navbar">
-			<div class="logo">
-				<a href="#inicio">
-					<img
-						id="logo"
-						src="src/assets/images/logo-removebg-preview.png"
-						alt="Logo"
-					/>
-				</a>
-			</div>
-			<button class="menu-botao" aria-label="Abrir Menu">
-				<img src="src/assets/icons/menu Hamburguer.png" alt="Icone-Menu" />
-			</button>
-			<nav class="menu">
-				<!-- Botão do menu hamburguer -->
-				<ul>
-					<li><a href="#inicio">Início</a></li>
-					<li><a href="#servicos">Serviços</a></li>
-					<li><a href="#habilidades">Habilidades</a></li>
-					<li><a href="#portfolio">Portfólio</a></li>
-					<li><a href="#sobre-mim">Sobre Mim</a></li>
-					<li><a href="#contato">Contato</a></li>
-				</ul>
-			</nav>
+		<header>
+			<section id="inicio" class="navbar">
+				<button class="menu-botao" aria-label="Abrir Menu">
+					<img src="src/assets/icons/menu Hamburguer.png" alt="Icone-Menu" />
+				</button>
+				<div class="logo">
+					<a href="#inicio">
+						<img
+							id="logo"
+							src="src/assets/images/logo-removebg-preview.png"
+							alt="Logo"
+						/>
+					</a>
+				</div>
+				<nav class="menu">
+					<!-- Botão do menu hamburguer -->
+					<ul>
+						<li><a href="#inicio">Início</a></li>
+						<li><a href="#servicos">Serviços</a></li>
+						<li><a href="#habilidades">Habilidades</a></li>
+						<li><a href="#portfolio">Portfólio</a></li>
+						<li><a href="#sobre-mim">Sobre Mim</a></li>
+						<li><a href="#contato">Contato</a></li>
+					</ul>
+				</nav>
+			</section>
+			<!-- Cabeçalho de apresentação -->
+			<section>
+				<div class="flex-container">
+					<section class="elemento">
+						<h1 id="nome">Emanuel Zolet.</h1>
+						<div id="container-redes-sociais">
+							<a
+								href="https://www.instagram.com/emzolet"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img
+									class="botoes-rede-sociais"
+									src="src/assets/icons/Redes Sociais/instagram.png"
+									alt="Instagram"
+								/>
+							</a>
+							<a
+								href="https://www.linkedin.com/in/emanuelzolet/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img
+									class="botoes-rede-sociais"
+									src="src/assets/icons/Redes Sociais/linkedin.png"
+									alt="LinkedIn"
+								/>
+							</a>
+						</div>
+						<div id="link-whats">
+							<a href="https://wa.me/5554984190241">
+								Entre em Contato
+								<img
+									src="src/assets/icons/Redes Sociais/whatsapp - sem borda.png"
+									alt="WhatsApp"
+								/>
+							</a>
+						</div>
+					</section>
+					<section class="elemento">
+						<img
+							id="foto-perfil"
+							src="src/assets/images/Foto_Perfil-removebg-preview.png"
+							alt="Foto de Perfil"
+						/>
+					</section>
+					<section class="elemento">
+						<h1 id="destaque">DESENVOLVEDOR WEB</h1>
+						<br />
+						<p>
+							Em cada linha, em cada traço, reside a essência da minha paixão.
+							<br />Bem-vindo ao meu universo de inspiração e inovação!
+						</p>
+						<br />
+						<a id="link" href="#">Me Conheça</a>
+					</section>
+				</div>
+			</section>
 		</header>
-		<!-- Cabeçalho de apresentação -->
-		<div class="flex-container">
-			<section class="elemento">
-				<h1 id="nome">Emanuel Zolet.</h1>
-				<div id="container-redes-sociais">
-					<a
-						href="https://www.instagram.com/emzolet"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<img
-							class="botoes-rede-sociais"
-							src="src/assets/icons/Redes Sociais/instagram.png"
-							alt="Instagram"
-						/>
-					</a>
-					<a
-						href="https://www.linkedin.com/in/emanuelzolet/"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<img
-							class="botoes-rede-sociais"
-							src="src/assets/icons/Redes Sociais/linkedin.png"
-							alt="LinkedIn"
-						/>
-					</a>
-				</div>
-				<div id="link-whats">
-					<a href="https://wa.me/5554984190241">
-						Entre em Contato
-						<img
-							src="src/assets/icons/Redes Sociais/whatsapp - sem borda.png"
-							alt="WhatsApp"
-						/>
-					</a>
-				</div>
-			</section>
-			<section class="elemento">
-				<img
-					id="foto-perfil"
-					src="src/assets/images/Foto_Perfil-removebg-preview.png"
-					alt="Foto de Perfil"
-				/>
-			</section>
-			<section class="elemento">
-				<h1 id="destaque">DESENVOLVEDOR WEB</h1>
-				<br />
-				<p>
-					Em cada linha, em cada traço, reside a essência da minha paixão.
-					<br />Bem-vindo ao meu universo de inspiração e inovação!
-				</p>
-				<br />
-				<a id="link" href="#">Me Conheça</a>
-			</section>
-		</div>
 		<!-- Inicio do conteúdo Principal -->
 		<main>
 			<!-- Parte dos serviços, será exibido em grid layout com media queries para mobile -->
