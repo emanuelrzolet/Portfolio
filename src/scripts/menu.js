@@ -1,5 +1,6 @@
 const menuBotao = document.querySelector(".menu-botao");
 const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menu ul li");
 
 let isMenuAberto = false;
 
@@ -19,6 +20,9 @@ menuBotao.addEventListener("click", () => {
 	if (isMenuAberto) {
 		fecharMenu();
 	} else {
+		menuItems.forEach(item => {
+			item.style.display = 'block';
+		});
 		abrirMenu();
 	}
 });
@@ -27,9 +31,13 @@ function verificarPosicao() {
 	const posicaoAtual = window.scrollY;
 
 	if (posicaoAtual === 0) {
+		menuItems.forEach(item => {
+			item.style.display = 'inline-block';
+		});
 		abrirMenu();
 	} else {
 		fecharMenu();
+		
 	}
 }
 
