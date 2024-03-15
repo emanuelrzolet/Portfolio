@@ -13,6 +13,12 @@ html {
 a {
 	color: var(--cor-branca);
 }
+p {
+	font-size: 0.6rem;
+	color: var(--cor-clara);
+	text-align: justify;
+	font-weight: 300;
+}
 
 /* Início */
 /* Barra de Navegação, o menu é responsivo e se transforma em ícone quando for um dispositivo móvel*/
@@ -22,13 +28,13 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px 20px;
-	position: sticky;
 	top: 0;
 	z-index: 100;
 }
 
 .logo img {
 	width: 150px;
+	z-index: -1;
 }
 /* Menu responsivo */
 .menu {
@@ -61,13 +67,12 @@ a {
 }
 
 .menu ul li {
-	margin-bottom: 20px;
 	display: inline-block;
 }
 
 .menu ul li a {
 	color: var(--cor-branca); /* Cor dos links do menu */
-	font-size: 1.5rem; /* Tamanho da fonte dos links do menu */
+	font-size: 1.1rem; /* Tamanho da fonte dos links do menu */
 	text-decoration: none;
 	display: block;
 	padding: 10px;
@@ -79,7 +84,7 @@ a {
 }
 
 .menu-botao {
-	width: 40px;
+	width: 3rem;
 	height: 40px;
 	display: block;
 	position: fixed;
@@ -96,6 +101,7 @@ a {
 
 /* Fim da Barra de Navegação */
 .flex-container {
+	gap: 1px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -103,8 +109,6 @@ a {
 	flex-direction: row;
 }
 .elemento {
-	padding: 10px 10px 0px 10px;
-	margin: 10px 10px 0px 10px;
 	background-color: transparent;
 }
 .flex-container .elemento {
@@ -114,7 +118,7 @@ a {
 #nome {
 	text-align: end;
 	color: var(--cor-branca);
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: 700;
 	font-style: italic;
 }
@@ -134,7 +138,7 @@ a {
 	color: white;
 }
 #link-whats > a > img {
-	width: 20px;
+	width: 1rem;
 }
 #link-whats {
 	text-align: end;
@@ -146,19 +150,13 @@ a {
 	color: var(--cor-destaque);
 	font-weight: 700;
 	text-align: start;
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 #link {
-	font-size: 14px;
+	font-size: 1.1rem;
 	color: var(--cor-branca);
 	display: flex;
 	font-weight: 900;
-}
-p {
-	font-size: 10px;
-	color: var(--cor-clara);
-	text-align: justify;
-	font-weight: 300;
 }
 
 /* Fim do cabeçalho e inicio do link Serviços */
@@ -248,7 +246,7 @@ article#habilidades > p {
 }
 .value-container {
 	position: relative;
-	font-size: 15px;
+	font-size: 0.8rem;
 	color: var(--cor-branca);
 }
 /* Esse valor tem uso no JavaScript */
@@ -269,7 +267,6 @@ article#habilidades > p {
 /* Fim de Habilidades e Inicio do banner  */
 
 /* Banner Animado */
-
 #banner {
 	padding: 10px;
 	width: 100%;
@@ -282,24 +279,27 @@ article#habilidades > p {
 #banner-texto {
 	position: absolute;
 	top: 50%;
-	left: 0;
-	transform: translate(-50%, -50%);
+	right: 0;
+	transform: translate(
+		100%,
+		-50%
+	); /* Alterado para 'translate(100%, -50%)' para iniciar fora do banner */
 	color: #fff;
-	font-size: 24px;
+	font-size: 1.4rem;
 	white-space: nowrap;
 	animation: move-texto 10s linear infinite;
 }
 
 @keyframes move-texto {
 	0% {
-		left: 0;
+		transform: translate(100%, -50%); /* Inicia fora do banner */
 	}
 	100% {
-		left: calc(125% + 50px);
+		transform: translate(-100%, -50%); /* Finaliza fora do banner */
 	}
 }
-
 /* Fim do Banner */
+
 /* Imagem rotacionando */
 img#imagemrotativa {
 	padding: 20px;
@@ -349,15 +349,15 @@ section#link-github > a {
 .card-container {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
-	max-width: 800px;
-	margin: 20px auto;
+	width: 90%;
+	max-width: 900px;
+	margin: 20px 0.1rem;
 }
 
 .card {
 	width: calc(33.33% - 10px);
 	border: 1px solid #ccc;
-	padding: 20px;
+	padding: 0.2rem;
 	transition: transform 0.3s ease, background-color 0.3s ease;
 }
 

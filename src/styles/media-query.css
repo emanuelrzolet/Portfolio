@@ -1,0 +1,22 @@
+@media screen and (max-width: 768px) {
+
+    /* Header */
+    .menu ul li a {
+        font-size: 0.8rem;
+    }
+    .logo img {
+        width: 100px;
+        z-index: -1;
+    }
+    .botoes-rede-sociais {
+        width: 30px;
+        margin: 5px;
+    }
+    #destaque, #nome {
+        font-size: 1.3rem;
+    }
+    #foto-perfil {
+        width: 150px;
+    }
+
+}
