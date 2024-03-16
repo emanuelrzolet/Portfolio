@@ -85,14 +85,18 @@ article {
 }
 
 .menu-botao {
-	width: 3rem;
-	height: 40px;
 	display: block;
 	position: fixed;
 	top: 20px;
 	right: 20px;
 	z-index: 1100; /* Z-index maior que o do menu para ficar acima */
 	cursor: pointer;
+	background-color: transparent;
+	border: none;
+}
+.menu-botao > img {
+	width: 50px;
+	height: 50px;
 }
 .oculto {
 	display: none;
