@@ -26,6 +26,11 @@
 	.grid-container {
 		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	}
+	.titulo {
+		font-weight: 700;
+		font-size: 1.1rem;
+		text-align: center;
+	}
 	/* Habilidades */
 	#habilidades-container > ul {
 		grid-template-columns: repeat(
