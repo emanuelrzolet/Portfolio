@@ -1,30 +1,40 @@
 const cards = document.querySelectorAll(".card");
-
 let activeCardIndex = 0;
+let intervalId;
 
 function setActiveCard(index) {
-	cards.forEach((card, idx) => {
-		if (idx === index) {
-			card.classList.add("active");
-		} else {
-			card.classList.remove("active");
-		}
-	});
+    cards.forEach((card, idx) => {
+        if (idx === index) {
+            card.classList.add("active");
+        } else {
+            card.classList.remove("active");
+        }
+    });
 }
 
 function rotateCards() {
-	activeCardIndex = (activeCardIndex + 1) % cards.length;
-	setActiveCard(activeCardIndex);
+    activeCardIndex = (activeCardIndex + 1) % cards.length;
+    setActiveCard(activeCardIndex);
 }
 
-setInterval(rotateCards, 3000); // Alternar entre os cards a cada 3 segundos
+function startRotation() {
+    intervalId = setInterval(rotateCards, 3500);
+}
+
+function stopRotation() {
+    clearInterval(intervalId);
+}
+
+startRotation();
 
 cards.forEach((card, index) => {
-	card.addEventListener("mouseenter", () => {
-		setActiveCard(index);
-	});
+    card.addEventListener("mouseenter", () => {
+        stopRotation();
+        setActiveCard(index);
+    });
 
-	card.addEventListener("mouseleave", () => {
-		setActiveCard(activeCardIndex);
-	});
+    card.addEventListener("mouseleave", () => {
+        startRotation();
+        setActiveCard(activeCardIndex);
+    });
 });

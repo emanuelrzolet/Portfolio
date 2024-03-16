@@ -367,12 +367,15 @@ section#link-github > a {
 }
 
 .card:hover {
-	transform: scale(1.1);
+	transform: scale(1.2);
 }
 
 .card.active {
-	background-color: #f85e00;
-	transform: scale(1.1);
+	background-color: var(--cor-mais-escura);
+	transform: scale(1.2);
+}
+.card.active > p{
+	color: var(--cor-branca);
 }
 /* Fim Cards */
 article#sobre-mim {
