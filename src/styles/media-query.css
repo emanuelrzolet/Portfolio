@@ -42,4 +42,9 @@
 			minmax(150px, 1fr)
 		); /* Ajuste para telas menores */
 	}
+
+	article#contato {
+		margin: auto;
+		width: 80vw;
+	}
 }
