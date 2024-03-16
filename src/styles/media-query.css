@@ -7,6 +7,10 @@
 		width: 100px;
 		z-index: -1;
 	}
+	.flex-container .elemento {
+		width: fit-content; /* Define a largura de cada seção */
+		text-align: center; /* Alinha o conteúdo ao centro */
+	}
 	.botoes-rede-sociais {
 		width: 30px;
 		margin: 5px;
@@ -16,7 +20,7 @@
 		font-size: 1.3rem;
 	}
 	#foto-perfil {
-		width: 150px;
+		width: 200px;
 	}
 	/* Serviços */
 	.grid-container {

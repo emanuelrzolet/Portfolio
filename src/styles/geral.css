@@ -48,7 +48,6 @@ article{width: 100vw;}
 
 .menu.aberto {
 	transform: translateY(2rem); /* Movendo o menu para baixo quando aberto */
-	width: fit-content;
 	display: flex;
 	justify-content: right;
 	align-items: center;
@@ -101,7 +100,7 @@ article{width: 100vw;}
 
 /* Fim da Barra de Navegação */
 .flex-container {
-	gap: 1px;
+	gap: 0px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -112,8 +111,8 @@ article{width: 100vw;}
 	background-color: transparent;
 }
 .flex-container .elemento {
-	width: 30%; /* Define a largura de cada seção */
-	text-align: center; /* Alinha o conteúdo ao centro */
+	width: 33%; /* Define a largura de cada seção */
+	text-align: center;
 }
 #nome {
 	text-align: end;
