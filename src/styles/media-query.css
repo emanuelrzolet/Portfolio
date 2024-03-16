@@ -15,9 +15,10 @@
 		width: 30px;
 		margin: 5px;
 	}
-	#destaque,
+	#destaque{font-size: 1.2rem;}
+
 	#nome {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 	}
 	#foto-perfil {
 		width: 100px;
