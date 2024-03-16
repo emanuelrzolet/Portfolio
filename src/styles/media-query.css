@@ -17,10 +17,10 @@
 	}
 	#destaque,
 	#nome {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	}
 	#foto-perfil {
-		width: 200px;
+		width: 100px;
 	}
 	/* Serviços */
 	.grid-container {
