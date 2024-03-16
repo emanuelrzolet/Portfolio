@@ -359,6 +359,9 @@ section#link-github > a {
 	margin: 20px 0.1rem;
 }
 
+.card > p {
+	text-indent: 1rem;
+}
 .card {
 	width: calc(33.33% - 10px);
 	border: 1px solid #ccc;
@@ -374,7 +377,8 @@ section#link-github > a {
 	background-color: var(--cor-mais-escura);
 	transform: scale(1.2);
 }
-.card.active > p{
+.card.active > p {
+	font-size: 0.9rem;
 	color: var(--cor-branca);
 }
 /* Fim Cards */
