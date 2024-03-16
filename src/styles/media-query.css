@@ -22,6 +22,9 @@
 	#foto-perfil {
 		width: 100px;
 	}
+	section.elemento > p {
+		font-size: 0.5rem;
+	}
 	/* Serviços */
 	.grid-container {
 		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
