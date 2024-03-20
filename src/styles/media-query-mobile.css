@@ -1,32 +1,45 @@
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 480px) {
 	/* Header */
 	.menu ul li a {
 		font-size: 0.8rem;
 	}
 	.logo img {
-		width: 100px;
+		width: 90px;
 		z-index: -1;
 	}
+
+	.flex-container {
+		padding: 0rem 1.5rem;
+	}
 	.flex-container .elemento {
-		width: fit-content; /* Define a largura de cada seção */
 		text-align: center; /* Alinha o conteúdo ao centro */
+		width: fit-content;
 	}
 	.botoes-rede-sociais {
-		width: 30px;
+		width: 20px;
 		margin: 5px;
 	}
 	#destaque {
-		font-size: 1.2rem;
+		font-size: 1rem;
 	}
 
 	#nome {
-		font-size: 1.4rem;
+		font-size: 1rem;
 	}
+	#link-whats > a {
+		font-size: 0.6rem;
+	}
+
 	#foto-perfil {
-		width: 140px;
+		width: 120px;
 	}
+	#link {
+		font-size: 0.8rem;
+	}
+
 	section.elemento > p {
 		font-size: 0.5rem;
+		text-align: start;
 	}
 	/* Serviços */
 	.grid-container {
@@ -34,7 +47,7 @@
 	}
 	.titulo {
 		font-weight: 700;
-		font-size: 1.1rem;
+		font-size: 1rem;
 		text-align: center;
 	}
 	/* Habilidades */
