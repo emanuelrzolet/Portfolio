@@ -357,13 +357,28 @@ section#link-github > a {
 /* Cards */
 .card-container {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: space-between; /*
 	width: 90%;
 	max-width: 900px;
-	margin: 20px 0.1rem;
+	margin: 20px 0.1rem; */
+}
+.card {
+	background-color: var(--cor-mais-escura);
+	padding: 1rem;
+	margin: 0.5rem;
+	width: 50vw;
+	border-radius: 0.5rem;
+}
+.card > div > img {
+	width: 100%;
+}
+.background {
+	height: 50vh;
+	background-image: url("../assets/images/Colagem-sem\ fundo.jpg") ;
 }
 
-.card > p {
+/* .card > p {
 	text-indent: 1rem;
 }
 .card {
@@ -384,7 +399,7 @@ section#link-github > a {
 .card.active > p {
 	font-size: 0.9rem;
 	color: var(--cor-branca);
-}
+} */
 /* Fim Cards */
 article#sobre-mim {
 	background-color: var(--cor-escura);
@@ -397,17 +412,7 @@ article#sobre-mim > section {
 article#sobre-mim > section > img {
 	height: 100vh;
 }
-article#sobre-mim > section > span {
-	width: 60vw;
-	text-align: justify;
-	border-radius: 50px;
-	background: linear-gradient(145deg, #0f1e29, #122330);
-	box-shadow: 23px 23px 45px #0e1c26, -23px -23px 45px #142634;
-	margin: 10px 40px;
-}
-article#sobre-mim > section > span > p {
-	font-size: 1rem;
-}
+
 /* Fim sobre mim e inicio de contatos */
 article#contato {
 	margin: auto;
