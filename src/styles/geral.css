@@ -40,8 +40,7 @@ article {
 }
 /* Menu responsivo observar o arquivo menu.js na pasta scripts*/
 .menu {
-	margin: 10px;
-	padding: 10px;
+	padding: 0.2rem;
 
 	display: none;
 	position: fixed;
