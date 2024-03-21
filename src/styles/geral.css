@@ -231,8 +231,8 @@ article#habilidades > p {
 	text-align: center;
 }
 #habilidades-container > ul > li:hover {
-	overflow: hidden;
 	scale: 1.1;
+	transition: 0.3s;
 }
 .progresso-container {
 	position: static;
@@ -249,6 +249,7 @@ article#habilidades > p {
 	border-radius: 50%;
 	display: grid;
 	place-items: center;
+	z-index: 1;
 	box-shadow: 25px 20px 40px #f85f0057;
 }
 .circular-progress:before {
