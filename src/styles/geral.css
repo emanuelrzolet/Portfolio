@@ -52,7 +52,6 @@ article {
 
 /* A classe aberto vem do Javascript quando o botão é clicado */
 .menu.aberto {
-	
 	transform: translateY(2rem); /* Movendo o menu para baixo quando aberto */
 	display: flex;
 	justify-content: right; /*Elemento será modificado com javascript */
@@ -385,16 +384,14 @@ section#link-github > a {
 /* Animação dos cards */
 /* A animação iniciará quando entrar na view port e quando sair iniciará outra animação, verificar arquivo animacao-card.js */
 
-
 /* .hidden {
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 } */
 
-
 /* Animação de fade in na esquerda */
 
-.fadeInLeftBig {
+.fadeInLeftBig.visible {
 	-webkit-animation-name: fadeInLeftBig;
 	animation-name: fadeInLeftBig;
 	-webkit-animation-duration: 1s;
@@ -427,7 +424,7 @@ section#link-github > a {
 	}
 }
 /* Animação fade in na direita */
-.fadeInRightBig {
+.fadeInRightBig.visible {
 	-webkit-animation-name: fadeInRightBig;
 	animation-name: fadeInRightBig;
 	-webkit-animation-duration: 1s;
@@ -460,7 +457,7 @@ section#link-github > a {
 	}
 }
 /* Fade out na direita */
-.fadeOutRight {
+.fadeOutRight.visible {
 	-webkit-animation-name: fadeOutRight;
 	animation-name: fadeOutRight;
 	-webkit-animation-duration: 1s;
@@ -517,7 +514,6 @@ section#link-github > a {
 		transform: translate3d(-100%, 0, 0);
 	}
 }
-
 
 /* .card > p {
 	text-indent: 1rem;

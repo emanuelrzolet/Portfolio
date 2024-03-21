@@ -1,25 +1,32 @@
-// const cards = document.querySelectorAll('.card');
+// Função para verificar se um elemento está visível na tela
+function isElementInViewport(el) {
+	var rect = el.getBoundingClientRect();
+	return (
+		rect.top >= 0 &&
+		rect.left >= 0 &&
+		rect.bottom <=
+			(window.innerHeight || document.documentElement.clientHeight) &&
+		rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+	);
+}
 
-//     const cardObserver = new IntersectionObserver(entries => {
-//         entries.forEach(entry => {
-//             if (entry.isIntersecting) {
-//                 entry.target.classList.remove('hidden');
-//                 if (entry.intersectionRatio >= 0.5) {
-//                     entry.target.classList.add('fadeInLeftBig');
-//                 } else {
-//                     entry.target.classList.add('fadeInRightBig');
-//                 }
-//             } else {
-//                 if (entry.intersectionRatio >= 0.5) {
-//                     entry.target.classList.remove('fadeInLeftBig');
-//                 } else {
-//                     entry.target.classList.remove('fadeInRightBig');
-//                 }
-//                 entry.target.classList.add('fadeOutLeft');
-//             }
-//         });
-//     }, { threshold: 0.5 });
+// Função para adicionar a classe "visible" quando o elemento está visível
+function handleVisibility(entries, observer) {
+	entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add("visible");
+			observer.unobserve(entry.target);
+		}
+	});
+}
 
-//     cards.forEach(card => {
-//         cardObserver.observe(card);
-//     });
+// Criar um Intersection Observer
+var cardObserver = new IntersectionObserver(handleVisibility);
+
+// Selecionar todos os elementos com as classes de animação
+var elements = document.querySelectorAll(".fadeInLeftBig, .fadeInRightBig");
+
+// Observar cada elemento
+elements.forEach((el) => {
+	cardObserver.observe(el);
+});
