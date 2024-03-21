@@ -47,10 +47,7 @@ window.addEventListener("load", () => {
   const larguraTela = window.innerWidth;
   const limiteMobile = 768; // Defina o limite de largura para considerar como dispositivo móvel
 
-  if (larguraTela <= limiteMobile) {
-    fecharMenu(); // Fecha o menu se estiver em um dispositivo móvel
+  if (larguraTela > limiteMobile) { // Verifica se não é um dispositivo móvel
+    abrirMenu(); // Abre o menu se não for um dispositivo móvel
   }
 });
-
-// Chama abrirMenu() para abrir o menu quando a página for carregada (remova essa linha para manter o menu fechado em dispositivos móveis)
-// abrirMenu();

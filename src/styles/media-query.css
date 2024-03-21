@@ -44,6 +44,9 @@
 			minmax(150px, 1fr)
 		); /* Ajuste para telas menores */
 	}
+	.card {
+		width: 60vw;
+	}
 
 	article#contato {
 		margin: auto;

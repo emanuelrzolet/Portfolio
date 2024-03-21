@@ -38,8 +38,11 @@ article {
 	width: 150px;
 	z-index: -1;
 }
-/* Menu responsivo */
+/* Menu responsivo observar o arquivo menu.js na pasta scripts*/
 .menu {
+	margin: 10px;
+	padding: 10px;
+
 	display: none;
 	position: fixed;
 	top: 0;
@@ -49,6 +52,7 @@ article {
 }
 
 .menu.aberto {
+	
 	transform: translateY(2rem); /* Movendo o menu para baixo quando aberto */
 	display: flex;
 	justify-content: right;
@@ -367,7 +371,7 @@ section#link-github > a {
 	background-color: var(--cor-mais-escura);
 	padding: 1rem;
 	margin: 0.5rem;
-	width: 70vw;
+	width: 40vw;
 	border-radius: 0.5rem;
 	text-indent: 0.7rem;
 }
