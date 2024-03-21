@@ -1,40 +1,25 @@
-// const cards = document.querySelectorAll(".card");
-// let activeCardIndex = 0;
-// let intervalId;
+// const cards = document.querySelectorAll('.card');
 
-// function setActiveCard(index) {
-//     cards.forEach((card, idx) => {
-//         if (idx === index) {
-//             card.classList.add("active");
-//         } else {
-//             card.classList.remove("active");
-//         }
+//     const cardObserver = new IntersectionObserver(entries => {
+//         entries.forEach(entry => {
+//             if (entry.isIntersecting) {
+//                 entry.target.classList.remove('hidden');
+//                 if (entry.intersectionRatio >= 0.5) {
+//                     entry.target.classList.add('fadeInLeftBig');
+//                 } else {
+//                     entry.target.classList.add('fadeInRightBig');
+//                 }
+//             } else {
+//                 if (entry.intersectionRatio >= 0.5) {
+//                     entry.target.classList.remove('fadeInLeftBig');
+//                 } else {
+//                     entry.target.classList.remove('fadeInRightBig');
+//                 }
+//                 entry.target.classList.add('fadeOutLeft');
+//             }
+//         });
+//     }, { threshold: 0.5 });
+
+//     cards.forEach(card => {
+//         cardObserver.observe(card);
 //     });
-// }
-
-// function rotateCards() {
-//     activeCardIndex = (activeCardIndex + 1) % cards.length;
-//     setActiveCard(activeCardIndex);
-// }
-
-// function startRotation() {
-//     intervalId = setInterval(rotateCards, 3500);
-// }
-
-// function stopRotation() {
-//     clearInterval(intervalId);
-// }
-
-// startRotation();
-
-// cards.forEach((card, index) => {
-//     card.addEventListener("mouseenter", () => {
-//         stopRotation();
-//         setActiveCard(index);
-//     });
-
-//     card.addEventListener("mouseleave", () => {
-//         startRotation();
-//         setActiveCard(activeCardIndex);
-//     });
-// });
