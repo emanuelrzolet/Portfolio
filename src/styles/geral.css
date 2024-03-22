@@ -117,7 +117,7 @@ article {
 	flex-direction: row;
 }
 .elemento > img {
-	filter: drop-shadow(0px -8px 8px #4bb5e69c);
+	filter: drop-shadow(0px -8px 30px #4bb5e63a);
 }
 .elemento {
 	background-color: transparent;
