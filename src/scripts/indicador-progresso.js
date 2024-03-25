@@ -1,25 +1,29 @@
-// A animação inicia quando o elemento é visualizado, o Valor final vem de um elemento que ta presente no HTML, mas escondi no CSS.
-
+// Selecionar todos os elementos li dentro de #habilidades-container
 const elementosLi = document.querySelectorAll("#habilidades-container li");
 
+// Opções para o Intersection Observer
 const options = {
-  root: null, // usa o viewport como root
-  threshold: 0.5 // define o threshold para 50%
+  root: null, // Usa o viewport como root
+  threshold: 0.5 // Define o threshold para 50%
 };
 
-const observer = new IntersectionObserver(entries => {
+// Criar um Intersection Observer para a animação de progresso circular
+const observerProgresso = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
+      // Capturar os elementos necessários para a animação
       const elementoLi = entry.target;
       const barraProgresso = elementoLi.querySelector(".circular-progress");
       const valueContainer = elementoLi.querySelector(".value-container");
       const valorOculto = elementoLi.querySelector("#valor-oculto");
       const valor = valorOculto.textContent;
 
+      // Variáveis para a animação
       let valorProgresso = 0;
       let progressEndValue = valor;
       let speed = 15;
 
+      // Função para atualizar o progresso
       let progresso = setInterval(() => {
         valorProgresso++;
         valueContainer.textContent = `${valorProgresso}%`;
@@ -33,11 +37,13 @@ const observer = new IntersectionObserver(entries => {
         }
       }, speed);
 
-      observer.unobserve(elementoLi); // para o observador após iniciar a animação
+      // Parar de observar o elemento após iniciar a animação
+      observerProgresso.unobserve(elementoLi);
     }
   });
 }, options);
 
+// Observar cada elemento li dentro de #habilidades-container
 elementosLi.forEach(elementoLi => {
-  observer.observe(elementoLi);
+  observerProgresso.observe(elementoLi);
 });
