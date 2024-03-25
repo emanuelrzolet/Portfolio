@@ -33,7 +33,6 @@ const observer = new IntersectionObserver(entries => {
         }
       }, speed);
 
-      observer.unobserve(elementoLi); // para o observador após iniciar a animação
     }
   });
 }, options);
