@@ -37,10 +37,10 @@ const observerProgresso = new IntersectionObserver(entries => {
         }
       }, speed);
 
-      // Parar de observar o elemento após iniciar a animação
-      observerProgresso.unobserve(elementoLi);
     }
   });
+  // Parar de observar o elemento após iniciar a animação
+  observerProgresso.unobserve(elementoLi);
 }, options);
 
 // Observar cada elemento li dentro de #habilidades-container
