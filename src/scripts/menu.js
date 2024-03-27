@@ -2,7 +2,6 @@ const menuBotao = document.querySelector(".menu-botao");
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menu ul li");
 
-
 let isMenuAberto = false;
 
 function abrirMenu() {
@@ -18,12 +17,11 @@ function fecharMenu() {
 }
 
 menuBotao.addEventListener("click", () => {
-  menu.style.width = "30vw";
-  menu.style.justifyContent = 'center';
+	menu.style.width = "35vw";
+	menu.style.justifyContent = "center";
 	if (isMenuAberto) {
 		fecharMenu();
 	} else {
-
 		menuItems.forEach((item) => {
 			item.style.display = "block";
 		});
@@ -36,7 +34,7 @@ function verificarPosicao() {
 
 	if (posicaoAtual === 0) {
 		menu.style.width = "70vw";
-    menu.style.justifyContent = 'right';
+		menu.style.justifyContent = "right";
 
 		menuItems.forEach((item) => {
 			item.style.display = "inline-block";
