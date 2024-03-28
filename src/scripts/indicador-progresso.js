@@ -4,7 +4,7 @@ const elementosLi = document.querySelectorAll("#habilidades-container li");
 // Opções para o Intersection Observer
 const options = {
   root: null, // Usa o viewport como root
-  threshold: 0.5 // Define o threshold para 50%
+  threshold: 0.2 // Define o threshold para 20%
 };
 
 // Criar um Intersection Observer para a animação de progresso circular
