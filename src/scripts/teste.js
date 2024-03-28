@@ -43,7 +43,10 @@ function animateCircularProgress(elementoLi) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
-        observerAnimacoes.unobserve(entry.target);
+        // Verificar se estamos em um dispositivo móvel antes de remover a observação
+        if (!window.matchMedia("(max-width: 767px)").matches) {
+          observerAnimacoes.unobserve(entry.target);
+        }
       }
     });
   });
