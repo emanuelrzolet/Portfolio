@@ -29,6 +29,9 @@ function animateCircularProgress(elementoLi) {
         const elementoLi = entry.target;
         animateCircularProgress(elementoLi);
         observerHabilidades.unobserve(elementoLi);
+  
+        // Adicionar rolagem suave para manter a posição da página
+        elementoLi.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     });
   }, { threshold: 0.5 });
@@ -43,10 +46,7 @@ function animateCircularProgress(elementoLi) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
-        // Verificar se estamos em um dispositivo móvel antes de remover a observação
-        if (!window.matchMedia("(max-width: 767px)").matches) {
-          observerAnimacoes.unobserve(entry.target);
-        }
+        observerAnimacoes.unobserve(entry.target);
       }
     });
   });
