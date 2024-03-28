@@ -365,7 +365,10 @@ section#link-github > a {
 .card-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between; /*
+	justify-content: space-between;
+	overflow: hidden;
+
+	/*
 	width: 90%;
 	max-width: 900px;
 	margin: 20px 0.1rem; */
@@ -394,6 +397,7 @@ section#link-github > a {
 } */
 /* Animação de fade in na esquerda */
 .fadeInLeftBig.visible {
+	overflow: hidden;
 	-webkit-animation-name: fadeInLeftBig;
 	animation-name: fadeInLeftBig;
 	-webkit-animation-duration: 1s;
@@ -405,8 +409,8 @@ section#link-github > a {
 @-webkit-keyframes fadeInLeftBig {
 	0% {
 		opacity: 0;
-		-webkit-transform: translate3d(-30vw, 0, 0);
-		transform: translate3d(-30vw, 0, 0);
+		-webkit-transform: translate3d(-100vw, 0, 0);
+		transform: translate3d(-100vw, 0, 0);
 	}
 	100% {
 		opacity: 1;
@@ -417,8 +421,8 @@ section#link-github > a {
 @keyframes fadeInLeftBig {
 	0% {
 		opacity: 0;
-		-webkit-transform: translate3d(-30vw, 0, 0);
-		transform: translate3d(-30vw, 0, 0);
+		-webkit-transform: translate3d(-100vw, 0, 0);
+		transform: translate3d(-100vw, 0, 0);
 	}
 	100% {
 		opacity: 1;
@@ -429,6 +433,7 @@ section#link-github > a {
 
 /* Animação fade in na direita */
 .fadeInRightBig.visible {
+	overflow: hidden;
 	-webkit-animation-name: fadeInRightBig;
 	animation-name: fadeInRightBig;
 	-webkit-animation-duration: 1s;
@@ -439,11 +444,15 @@ section#link-github > a {
 }
 @-webkit-keyframes fadeInRightBig {
 	0% {
+		overflow: hidden;
+
 		opacity: 0;
-		-webkit-transform: translate3d(30vw, 0, 0);
-		transform: translate3d(30vw, 0, 0);
+		-webkit-transform: translate3d(100vw, 0, 0);
+		transform: translate3d(100vw, 0, 0);
 	}
 	100% {
+		overflow: hidden;
+
 		opacity: 1;
 		-webkit-transform: none;
 		transform: none;
@@ -451,11 +460,15 @@ section#link-github > a {
 }
 @keyframes fadeInRightBig {
 	0% {
+		overflow: hidden;
+
 		opacity: 0;
-		-webkit-transform: translate3d(30vw, 0, 0);
-		transform: translate3d(30vw, 0, 0);
+		-webkit-transform: translate3d(100vw, 0, 0);
+		transform: translate3d(100vw, 0, 0);
 	}
 	100% {
+		overflow: hidden;
+
 		opacity: 1;
 		-webkit-transform: none;
 		transform: none;
