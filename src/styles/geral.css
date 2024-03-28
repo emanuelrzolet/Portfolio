@@ -392,9 +392,7 @@ section#link-github > a {
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 } */
-
 /* Animação de fade in na esquerda */
-
 .fadeInLeftBig.visible {
 	-webkit-animation-name: fadeInLeftBig;
 	animation-name: fadeInLeftBig;
@@ -402,6 +400,7 @@ section#link-github > a {
 	animation-duration: 1s;
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
+	animation-play-state: paused; /* Adicionando a propriedade para pausar a animação */
 }
 @-webkit-keyframes fadeInLeftBig {
 	0% {
@@ -427,6 +426,7 @@ section#link-github > a {
 		transform: none;
 	}
 }
+
 /* Animação fade in na direita */
 .fadeInRightBig.visible {
 	-webkit-animation-name: fadeInRightBig;
@@ -435,6 +435,7 @@ section#link-github > a {
 	animation-duration: 1s;
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
+	animation-play-state: paused; /* Adicionando a propriedade para pausar a animação */
 }
 @-webkit-keyframes fadeInRightBig {
 	0% {
@@ -460,6 +461,7 @@ section#link-github > a {
 		transform: none;
 	}
 }
+
 /* Fim das animações */
 /* .card > p {
 	text-indent: 1rem;
